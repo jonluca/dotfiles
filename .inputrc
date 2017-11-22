@@ -1,0 +1,22 @@
+set completion-ignore-case on
+set show-all-if-ambiguous on
+set bell-style none
+
+# Do not autocomplete hidden files unless the pattern explicitly begins with a dot
+set match-hidden-files off
+
+# Show all autocomplete results at once
+set page-completions off
+
+setopt menu_complete
+
+set visible-stats on
+set input-meta on
+set output-meta on
+set convert-meta off
+
+bindkey -e
+bindkey '[C' forward-word
+bindkey '[D' backward-word
+setopt RM_STAR_SILENT
+unalias rm
