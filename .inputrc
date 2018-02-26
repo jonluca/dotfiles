@@ -10,6 +10,7 @@ set match-hidden-files off
 set page-completions off
 
 setopt menu_complete
+setopt extendedglob
 
 set visible-stats on
 set input-meta on
