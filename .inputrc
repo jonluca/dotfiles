@@ -1,3 +1,4 @@
+
 set completion-ignore-case on
 set show-all-if-ambiguous on
 set bell-style none
@@ -19,4 +20,5 @@ bindkey -e
 bindkey '[C' forward-word
 bindkey '[D' backward-word
 setopt RM_STAR_SILENT
-unalias rm
+set mark-symlinked-directories on
+set skip-completed-text on
