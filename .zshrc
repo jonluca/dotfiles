@@ -1,3 +1,5 @@
+zmodload zsh/zprof
+
 export ZSH=/Users/jonlucadecaro/.oh-my-zsh
 source /Users/jonlucadecaro/Documents/Other/dotfiles/sandboxd
 
@@ -19,3 +21,4 @@ POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND='black'
 for file in /Users/jonlucadecaro/Documents/Other/dotfiles/.{fzf.zsh,export,alias,functions,inputrc}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
+zprof
