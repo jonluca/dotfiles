@@ -12,7 +12,7 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 alias trick='git status; git add -A; git commit -m "JonLuca commit"; git push'
-alias me='ssh -p 32233 root@159.89.134.105'
+alias me='ssh -p 32233 jonluca@159.89.134.105'
 alias subl="sublime"
 alias s="sublime"
 alias desktop="cd /Users/jonlucadecaro/Desktop/"
