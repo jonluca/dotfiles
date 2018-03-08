@@ -14,10 +14,8 @@ export PYTHONIOENCODING='UTF-8';
 export LANG='en_US.UTF-8';
 export LC_ALL='en_US.UTF-8';
 
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-export PATH="/Users/jonlucadecaro/miniconda2/bin:$PATH"
-export PATH="~/Library/Python/3.4/bin:$PATH"
 export PATH="/opt/metasploit-framework/bin:$PATH"
+export PATH="/usr/local/opt/python@2/libexec/bin:$PATH"
 
 
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/Cellar/python/2.7.13/bin/python2.7
