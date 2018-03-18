@@ -18,7 +18,7 @@ alias s="sublime"
 alias desktop="cd /Users/jonlucadecaro/Desktop/"
 alias doc="cd /Users/jonlucadecaro/Documents/"
 # permissions in octal form
-alias perms="stat -c "%a %n" *"
+alias perms="stat -f '%A %a %N' *"
 
 # Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
 alias grep='grep --color=auto'
