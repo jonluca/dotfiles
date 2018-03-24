@@ -132,3 +132,5 @@ qg() {
   gcmsg $1
   gp
 }
+
+alias gq="qg"
