@@ -85,3 +85,50 @@ alias reload="exec ${SHELL} -l"
 alias path='echo -e ${PATH//:/\\n}'
 # common git push misspelling
 alias pg='gp' 
+alias g='git'
+
+alias ga='git add'
+alias gaa='git add --all'
+alias gapa='git add --patch'
+alias gau='git add --update'
+alias gap='git apply'
+
+alias gb='git branch'
+alias gba='git branch -a'
+alias gbd='git branch -d'
+
+alias gc='git commit -S -v'
+alias gcb='git checkout -b'
+alias gcf='git config --list'
+alias gcl='git clone --recursive'
+alias gclean='git clean -fd'
+alias gpristine='git reset --hard && git clean -dfx'
+alias gcm='git checkout master'
+alias gcd='git checkout develop'
+alias gcmsg='git commit -S -m'
+alias gco='git checkout'
+alias gcount='git shortlog -sn'
+alias gcp='git cherry-pick'
+alias gcpa='git cherry-pick --abort'
+alias gcpc='git cherry-pick --continue'
+alias gcs='git commit -S'
+
+alias gl='git pull'
+
+alias gp='git push'
+alias gpd='git push --dry-run'
+alias gpoat='git push origin --all && git push origin --tags'
+compdef _git gpoat=git-push
+alias gpu='git push upstream'
+alias gpv='git push -v'
+
+alias glum='git pull upstream master'
+
+alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify -m "--wip-- [skip ci]"'
+
+
+qg() {
+  gaa
+  gcmsg $1
+  gp
+}

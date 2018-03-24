@@ -7,7 +7,7 @@ HYPHEN_INSENSITIVE="true"
 MENU_COMPLETE="true"
 DISABLE_UPDATE_PROMPT="true"
 
-plugins=(git brew osx pip)
+plugins=(brew osx pip)
 
 source $ZSH/oh-my-zsh.sh
 
