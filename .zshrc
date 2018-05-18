@@ -6,7 +6,6 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 HYPHEN_INSENSITIVE="true"
 MENU_COMPLETE="true"
 DISABLE_UPDATE_PROMPT="true"
-
 plugins=(brew osx pip)
 
 source $ZSH/oh-my-zsh.sh
