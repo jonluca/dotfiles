@@ -10,7 +10,7 @@ ln -s `pwd`/.sandboxrc ~
 
 # Set up shell
 brew install zsh
-sudo chsh -s $(which zsh)
+chsh -s $(which zsh)
 
 # set up theme
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
