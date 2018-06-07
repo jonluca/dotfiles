@@ -2,8 +2,9 @@
 echo "Installing JonLuca's Environment"
 orig=$(pwd)
 # Symlink two important config files
-ln -s `pwd`/.zshrc ~
-ln -s `pwd`/.sandboxrc ~
+ln -s orig/.zshrc ~
+ln -s orig/.sandboxrc ~
+ln -s orig/.vimrc ~
 
 # Install brew 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
