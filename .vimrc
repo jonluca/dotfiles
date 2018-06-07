@@ -11,6 +11,7 @@ set showcmd                     "Show incomplete cmds down the bottom
 set showmode                    "Show current mode down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
+set t_vb=
 set autoread                    "Reload files changed outside vim
 
 " This makes vim act like all other editors, buffers can
@@ -54,9 +55,6 @@ set expandtab
 filetype plugin on
 filetype indent on
 
-" Display tabs and trailing spaces visually
-set list listchars=tab:\ \ ,trail:Â·
-
 set wrap       "Wrap lines
 set linebreak    "Wrap lines at convenient points
 
@@ -84,80 +82,39 @@ set sidescroll=1
 " ========================================
 " Vim plugin configuration
 " ========================================
-"
-" This file contains the list of plugin installed using vundle plugin manager.
-" Once you've updated the list of plugin, you can run vundle update by issuing
-" the command :BundleInstall from within vim or directly invoking it from the
-" command line with the following syntax:
-" vim --noplugin -u vim/vundles.vim -N "+set hidden" "+syntax on" +BundleClean! +BundleInstall +qall
-" Filetype off is required by vundle
-filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-" let Vundle manage Vundle (required)
-Bundle "gmarik/vundle"
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
 
-""""""""""""""""""""""""""""""""" MY VUNDLES """""""""""""""""""""""
-" HEAVILY/MOSTLY taken from https://github.com/skwp/dotfiles 
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
 
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+Plugin 'tpope/vim-fugitive'
+" plugin from http://vim-scripts.org/vim/scripts.html
+" Plugin 'L9'
+" Git plugin not hosted on GitHub
+Plugin 'git://git.wincent.com/command-t.git'
+" git repos on your local machine (i.e. when working on your own plugin)
+Plugin 'file:///home/gmarik/path/to/plugin'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Install L9 and avoid a Naming conflict if you've already installed a
+" different version somewhere else.
+" Plugin 'ascenator/L9', {'name': 'newL9'}
 
-" Make Git pervasive in vim ( :Gblame + Glog + many more )
-Bundle 'tpope/vim-fugitive'
- 
-" file navigator gutter
-Bundle "scrooloose/nerdtree.git"
-
-" awesome syntax highlighting
-" TODO: Figure out how to enable correctly for Ruby.
-Bundle 'scrooloose/syntastic'
-
-" Command+T replacement (ctrl+P)
-Bundle 'kien/ctrlp.vim'
-
-" Rails plugin ( :A mapping! )
-Bundle "tpope/vim-rails.git"
-
-" comment lines out (gc in visual mode)
-Bundle "tomtom/tcomment_vim.git"
-
-" Make it look amazing 
-Bundle 'altercation/vim-colors-solarized'
-
-" Pimped out bar at the bottom of current buffer
-Bundle "bling/vim-airline.git"
-
-" Highlights class names + methods more brightly
-" Handy for seeing syntax shape before your eyes
-Bundle "vim-scripts/TagHighlight.git"
-
-" Search everything in the current dir via :Ack
-Bundle "mileszs/ack.vim"
-
-" Enable Markdown Preview + GitHub flavored markdown
-Bundle "jtratner/vim-flavored-markdown.git"
-Bundle "nelstrom/vim-markdown-preview"
-
-" TODO: Figure out how to do indents intelligently
-" Bundle "austintaylor/vim-indentobject"
-
-" Open a shell within vim via :ConqueTerm
-Bundle "skwp/vim-conque"
-
-" Syntax highlighting for .bats files
-Bundle 'rosstimson/bats.vim'
-
-" Open up a bash shell quickly in the current window
-map <Leader>s <esc>:ConqueTermSplit bash<cr>
-
-" Make Ctrl+w o, function with toggle niceness
-Bundle "vim-scripts/ZoomWin"
-
-Bundle 'kchmck/vim-coffee-script'
-
-" requires exuberant ctags
-Bundle 'majutsushi/tagbar'
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 " END OF VUNDLE PLUGINS
 """"""""""""""""""""""""""""""""""""""""""""""""
@@ -175,8 +132,6 @@ filetype plugin indent on     " required!
 " Color theme (drawing from altercation/vim-colors-solarized Bundle)
 syntax enable
 set background=dark
-colorscheme solarized
-color solarized
 
 " For MacVim
 set guifont=Monaco:h16
@@ -198,10 +153,6 @@ let g:syntastic_auto_jump=0
 let g:syntastic_auto_loc_list=1
 "don't care about warnings
 let g:syntastic_quiet_warnings=0
-
-" Coffee Script Compilation
-" Compile the current file into a vertcally split screen
-map <Leader>cs <esc>:CoffeeCompile vert<cr>
 
 " ====== Make tabs be addressable via Apple+1 or 2 or 3, etc
 " Use numbers to pick the tab you want (like iTerm)
