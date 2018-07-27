@@ -1,0 +1,144 @@
+total 64
+drwxrwxr-x+ 143 root           admin   4576 Jul 23 20:40 ./
+drwxr-xr-x@  33 root           wheel   1056 Jul 24 08:21 ../
+-rw-rw-r--    1 root           admin  30724 Jun 19 16:22 .DS_Store
+-rw-r--r--    1 root           wheel      0 May 15 11:09 .localized
+drwxr-xr-x    3 jonlucadecaro  staff     96 Jul 18 13:15 1Password 7.app/
+drwxr-xr-x@   3 jonlucadecaro  admin     96 Apr 27  2017 Adium.app/
+drwxrwxr-x    6 root           wheel    192 Jun  4 18:24 Adobe Acrobat DC/
+drwxrwxr-x   10 root           admin    320 Jun  4 18:25 Adobe After Effects CS6/
+drwxr-xr-x    5 root           admin    160 Jun  4 18:23 Adobe Creative Cloud/
+drwxrwxr-x   12 root           admin    384 Jun  4 18:25 Adobe Illustrator CS6/
+drwxrwxr-x   13 root           admin    416 Jun  4 18:24 Adobe InDesign CS6/
+drwxrwxr-x    5 root           admin    160 Jun  4 18:25 Adobe Media Encoder CS6/
+drwxrwxr-x   10 root           admin    320 Jun  4 18:24 Adobe Photoshop CC 2018/
+drwxrwxr-x   12 root           admin    384 Jun  4 18:25 Adobe Photoshop CS6/
+drwxrwxr-x    7 root           admin    224 Jun  4 18:24 Adobe Premiere Pro CS6/
+drwxr-xr-x    3 jonlucadecaro  staff     96 Jul 11 05:39 Alfred 3.app/
+drwxr-xr-x@   3 jonlucadecaro  admin     96 Dec 22  2017 Amazon Chime.app/
+drwxr-xr-x    3 root           wheel     96 Aug 14  2017 Amphetamine.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 App Store.app/
+drwxr-xr-x    3 jonlucadecaro  staff     96 Sep 21  2016 AppCleaner.app/
+drwxrwxr-x    3 root           admin     96 Mar 17 01:47 Application Loader.app/
+drwxr-xr-x    3 jonlucadecaro  admin     96 Jul 22 17:35 Astro.app/
+drwxr-xr-x    3 jonlucadecaro  staff     96 Jan  9  2018 Atom.app/
+drwxr-xr-x@   3 jonlucadecaro  admin     96 Mar  8  2017 Audacity.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 Automator.app/
+drwxr-xr-x@   3 jonlucadecaro  staff     96 May 30 11:00 Backup and Sync.app/
+drwxr-xr-x    3 root           wheel     96 May 26 11:51 Bear.app/
+drwxr-xr-x    3 jonlucadecaro  staff     96 Jun 29 18:10 BetterTouchTool.app/
+drwxr-xr-x@   3 jonlucadecaro  admin     96 Feb  7  2017 Bit Slicer.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 Books.app/
+drwxr-xr-x    3 jonlucadecaro  admin     96 Jun 29 01:18 Burp Suite Community Edition.app/
+drwxr-xr-x@   3 jonlucadecaro  admin     96 May 21 01:29 CCleaner.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 Calculator.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 Calendar.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 Chess.app/
+drwxr-xr-x    3 root           admin     96 Sep  9  2017 Chrome Remote Desktop Host Uninstaller.app/
+drwxr-xr-x@   3 jonlucadecaro  staff     96 Apr 14  2016 Cisdem ContactsMate.app/
+drwxr-xr-x@   3 jonlucadecaro  staff     96 Mar 21  2014 Colloquy.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 Contacts.app/
+drwxr-xr-x    3 root           wheel     96 Aug 14  2017 CopyClip.app/
+drwxr-xr-x    3 jonlucadecaro  staff     96 Jul 22 18:15 Cyberduck.app/
+drwxrwxr-x    3 root           wheel     96 Aug 17  2017 DPS App Builder.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 Dashboard.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 Dictionary.app/
+drwxr-xr-x    3 jonlucadecaro  staff     96 Apr 30 22:29 Discord.app/
+drwxr-xr-x@   3 jonlucadecaro  admin     96 Mar 27  2006 Disk Inventory X.app/
+drwxr-xr-x    3 jonlucadecaro  staff     96 Apr 30 09:03 Docker.app/
+drwxr-xr-x    3 jonlucadecaro  admin     96 Jul 14 10:16 Dropbox.app/
+drwxr-xr-x    3 jonlucadecaro  admin     96 Dec  4  2017 Eclipse.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 FaceTime.app/
+drwxr-xr-x    3 jonlucadecaro  staff     96 Jun 15 07:43 FileZilla.app/
+drwxrwxr-x@   3 jonlucadecaro  admin     96 Aug  9  2017 Firefox.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 Font Book.app/
+drwxr-xr-x    3 root           admin     96 Jun 13 06:18 GPG Keychain.app/
+drwxr-xr-x@   3 jonlucadecaro  staff     96 Jul 31  2017 GitHub Desktop.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 24 18:41 Google Chrome.app/
+drwxr-xr-x@   3 jonlucadecaro  admin     96 Apr  9  2017 HandBrake.app/
+drwxr-xr-x    3 jonlucadecaro  admin     96 Aug 24  2017 Hex Fiend.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 Home.app/
+drwxr-xr-x@   3 jonlucadecaro  staff     96 Nov 29  2016 Hopper Disassembler v4.app/
+drwxr-xr-x@   3 jonlucadecaro  admin     96 May 12  2017 Hyper.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 Image Capture.app/
+drwxr-xr-x@   3 jonlucadecaro  staff     96 Jun  3 20:21 ImageOptim.app/
+drwxr-xr-x    3 jonlucadecaro  staff     96 Apr  2 12:59 Insomnia.app/
+drwxr-xr-x    3 root           wheel     96 Jul 23 20:40 Irvue.app/
+drwxr-xr-x    3 jonlucadecaro  staff     96 Jul 18 19:38 Itsycal.app/
+drwxr-xr-x    3 jonlucadecaro  admin     96 Jul 22 14:17 JetBrains Toolbox.app/
+drwxr-xr-x    3 jonlucadecaro  staff     96 Dec 30  2017 Keybase.app/
+drwxr-xr-x@   3 jonlucadecaro  admin     96 Nov 14  2017 Kodi.app/
+drwxr-xr-x@   3 jonlucadecaro  admin     96 Dec 21  2014 LICEcap.app/
+drwxr-xr-x    3 root           wheel     96 Jul 23 17:40 LastPass.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 Launchpad.app/
+drwxr-xr-x@   3 jonlucadecaro  staff     96 Mar  5 09:03 Macs Fan Control.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 Mail.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 Maps.app/
+drwxr-xr-x@   3 jonlucadecaro  staff     96 Nov 16  2016 Materialette.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 Messages.app/
+drwxrwxr-x    3 root           wheel     96 Jul 24 13:17 Microsoft Excel.app/
+drwxrwxr-x    3 root           wheel     96 Jul 24 13:17 Microsoft OneNote.app/
+drwxrwxr-x    3 root           wheel     96 Jul 24 13:18 Microsoft PowerPoint.app/
+drwxr-xr-x    3 root           wheel     96 May  7 08:33 Microsoft Remote Desktop.app/
+drwxrwxr-x    3 root           wheel     96 Jul 24 13:19 Microsoft Word.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 Mission Control.app/
+drwxr-xr-x    3 jonlucadecaro  staff     96 Apr 13 13:54 Mountain Duck.app/
+drwxr-xr-x@   3 jonlucadecaro  admin     96 Feb  3  2017 MySQLWorkbench.app/
+drwxr-xr-x    3 root           wheel     96 May  9 14:53 Nessus/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 News.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 Notes.app/
+drwxr-xr-x    3 jonlucadecaro  admin     96 Feb 28 14:20 OmniDiskSweeper.app/
+drwxr-xr-x@   3 jonlucadecaro  admin     96 Oct  7  2017 OnyX.app/
+drwxr-xr-x@   4 root           wheel    128 May 20 14:35 Parallels Desktop.app/
+drwxrwxr-x    3 jonlucadecaro  admin     96 Jun 12 07:20 Parallels Toolbox.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 Photo Booth.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 Photos.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 Preview.app/
+drwxr-xr-x@  10 root           wheel    320 Jul  7 17:12 Python 3.7/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 QuickTime Player.app/
+drwxr-xr-x@   3 jonlucadecaro  admin     96 May 22 09:44 RH-Ticker.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 Reminders.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 Safari.app/
+drwxr-xr-x@   3 jonlucadecaro  admin     96 Jun  4 17:39 Screaming Frog SEO Spider.app/
+lrwxr-xr-x    1 root           admin     69 Nov 22  2017 Simulator.app@ -> /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 Siri.app/
+drwxr-xr-x    3 jonlucadecaro  admin     96 Apr  5 04:22 Sketch.app/
+drwxr-xr-x    3 root           wheel     96 Jun  8 06:45 Slack.app/
+drwxr-xr-x    3 jonlucadecaro  staff     96 Jun  7 09:38 Sloth.app/
+drwxr-xr-x    3 jonlucadecaro  staff     96 Jun 12 07:13 Spotify.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 Stickies.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 Stocks.app/
+drwxr-xr-x    3 jonlucadecaro  admin     96 May 17 11:45 Sublime Text.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 System Preferences.app/
+drwxrwxr-x   15 root           admin    480 Jun  4 18:24 TeX/
+drwxr-xr-x@   3 jonlucadecaro  staff     96 Sep 11  2017 TeXShop High Sierra.app/
+drwxr-xr-x    3 root           wheel     96 Dec 14  2017 TeamViewer.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 TextEdit.app/
+drwxr-xr-x    3 root           wheel     96 Jun 16 20:09 The Unarchiver.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 Time Machine.app/
+drwxr-xr-x    3 jonlucadecaro  admin     96 Aug 17  2016 TinyUmbrella.app/
+drwxr-xr-x@   3 jonlucadecaro  admin     96 Aug  7  2017 TorBrowser.app/
+drwxr-xr-x@   3 jonlucadecaro  admin     96 Mar  6  2016 Transmission.app/
+drwxr-xr-x    3 root           wheel     96 Apr 14 11:09 Turtle Beach.app/
+drwxr-xr-x+  30 root           admin    960 Jul 16 18:58 Utilities/
+drwxr-xr-x@   3 jonlucadecaro  admin     96 Jun  8  2017 VLC.app/
+drwxr-xr-x@   3 root           wheel     96 May 11 17:21 VMware Fusion.app/
+drwxr-xr-x    3 root           admin     96 Jul 22 15:55 VirtualBox.app/
+drwxr-xr-x@   3 jonlucadecaro  admin     96 Jul  3 02:05 Viscosity.app/
+drwxr-xr-x    3 jonlucadecaro  staff     96 Mar  9 12:16 Visual Studio Code.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 VoiceMemos.app/
+drwxrwxr-x    4 root           admin    128 Jun  4 18:23 WEPA/
+drwxrwxr-x    3 root           admin     96 May 10 13:46 WEPA-PrintApp.app/
+drwxrwxr-x    3 root           admin     96 Oct 19  2017 Wireshark.app/
+drwxr-xr-x    3 jonlucadecaro  staff     96 May 31 10:10 Xcode.app/
+drwxr-xr-x    3 root           wheel     96 Jun 11 15:09 Zenmap.app/
+drwxr-xr-x@   3 jonlucadecaro  admin     96 Mar  8 18:52 calibre.app/
+drwxr-xr-x    3 jonlucadecaro  staff     96 Feb  9  2017 cheatengine-i386.app/
+drwxr-xr-x    3 jonlucadecaro  staff     96 May 18 12:22 coconutBattery.app/
+drwxr-xr-x    3 jonlucadecaro  admin     96 Jun  6  2017 iExplorer.app/
+drwxr-xr-x@   3 jonlucadecaro  admin     96 Jan 25  2016 iFunBox.app/
+drwxr-xr-x    3 jonlucadecaro  staff     96 Apr 22 17:20 iTerm.app/
+drwxr-xr-x@   3 root           wheel     96 Jul 16 18:59 iTunes.app/
+drwxr-xr-x    3 jonlucadecaro  staff     96 Mar 18 15:57 mac2imgur.app/
+drwxr-xr-x    3 jonlucadecaro  staff     96 Feb  9  2017 tutorial-i386.app/
+drwxr-xr-x@   3 jonlucadecaro  admin     96 Oct 24  2017 unetbootin.app/
