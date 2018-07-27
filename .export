@@ -17,3 +17,6 @@ export LC_ALL='en_US.UTF-8';
 export PATH="/Users/jonlucadecaro/.pyenv/shims:/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
+
+export PATH="/opt/metasploit-framework/bin/:$PATH"
+export GOPATH="$HOME/.go"
