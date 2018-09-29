@@ -129,3 +129,5 @@ qg() {
 }
 
 alias gq="qg"
+alias path='echo -e ${PATH//:/\\n}'
+
