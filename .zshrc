@@ -24,3 +24,8 @@ for file in $dotfiles/.{fzf.zsh,export,alias,functions,inputrc}; do
 done;
 
 source  ~/powerlevel9k/powerlevel9k.zsh-theme
+
+zstyle ':completion:*' completer _complete
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' '+l:|=* r:|=*'
+autoload -Uz compinit
+compinit
