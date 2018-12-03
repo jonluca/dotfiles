@@ -4,6 +4,7 @@ atk
 atkmm
 autoconf
 automake
+bash
 binutils
 blueutil
 cairo
@@ -33,6 +34,7 @@ gdb
 gdbm
 gdk-pixbuf
 gettext
+git
 glib
 glibmm
 glide
@@ -63,6 +65,7 @@ imagemagick
 isl
 isl@0.14
 jpeg
+jq
 lame
 lftp
 libepoxy
@@ -70,6 +73,7 @@ libffi
 libiconv
 libidn
 libidn2
+libmaxminddb
 libmpc
 libogg
 libpcap
@@ -84,6 +88,7 @@ libvorbis
 libxml2
 libxslt
 libyaml
+little-cms2
 llvm
 lua
 lzip
@@ -99,14 +104,16 @@ nasm
 nettle
 nginx
 nmap
-node
 nvm
+oniguruma
+openjpeg
 openssl
 openssl@1.1
 p11-kit
 pango
 pangomm
 pcre
+pcre2
 perl
 pixman
 pkg-config
@@ -129,6 +136,7 @@ sox
 sphinx-doc
 sqlite
 sqlmap
+swiftformat
 telnet
 testdisk
 the_silver_searcher
@@ -137,9 +145,13 @@ tokyo-cabinet
 tree
 watch
 wdiff
+webp
 wget
+wireguard-go
+wireguard-tools
 wxmac
 xz
 yarn
 youtube-dl
 zlib
+zopfli
