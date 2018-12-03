@@ -20,3 +20,8 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH="/opt/metasploit-framework/bin/:$PATH"
 export GOPATH="$HOME/.go"
+
+# fzf options, set default to fd instead of find
+export FZF_DEFAULT_COMMAND='fd --type f --color=never'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND='fd --type d . --color=never'

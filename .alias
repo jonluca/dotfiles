@@ -1,5 +1,5 @@
 
-alias ll='ls -alF'
+alias ll='ls -alhTF'
 alias la='ls -A'
 alias l='ls -CF'
 
@@ -19,6 +19,8 @@ alias desktop="cd /Users/jonlucadecaro/Desktop/"
 alias doc="cd /Users/jonlucadecaro/Documents/"
 # permissions in octal form
 alias perms="stat -f '%A %a %N' *"
+alias fkill='fzf_kill'
+
 
 # Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
 alias grep='grep --color=auto'
