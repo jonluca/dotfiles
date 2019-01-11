@@ -1,4 +1,5 @@
 
+alias ls='ls -G'
 alias ll='ls -alhTF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -76,7 +77,7 @@ alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v exten
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
 # Reload the shell (i.e. invoke as a login shell)
-alias reload="exec ${SHELL} -l"
+alias reload="exec ${SHELL}"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
@@ -115,7 +116,6 @@ alias gl='git pull'
 alias gp='git push'
 alias gpd='git push --dry-run'
 alias gpoat='git push origin --all && git push origin --tags'
-compdef _git gpoat=git-push
 alias gpu='git push upstream'
 alias gpv='git push -v'
 
@@ -123,13 +123,7 @@ alias glum='git pull upstream master'
 
 alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify -m "--wip-- [skip ci]"'
 
-
-qg() {
-  gaa
-  gcmsg $1
-  gp
-}
-
 alias gq="qg"
 alias path='echo -e ${PATH//:/\\n}'
 
+alias nosync_nodemodules="find . -type d -name 'node_modules' -exec touch {}/.nosync \;"
