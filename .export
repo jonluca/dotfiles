@@ -13,14 +13,21 @@ export PYTHONIOENCODING='UTF-8';
 # Prefer US English and use UTF-8.
 export LANG='en_US.UTF-8';
 export LC_ALL='en_US.UTF-8';
+export GOPATH="$HOME/.go"
 
 export PATH="/Users/jonlucadecaro/.pyenv/shims:/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
-export PATH=$PATH:/Users/jonlucadecaro/Documents/Other/depot_tools
+export PATH="$GOPATH/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 
+# Ruby stuff
+export RBENV_ROOT="${HOME}/.rbenv"
+if [ -d "${RBENV_ROOT}" ]; then
+  export PATH="${RBENV_ROOT}/bin:${PATH}"
+  eval "$(rbenv init -)"
+fi
+
 export PATH="/opt/metasploit-framework/bin/:$PATH"
-export GOPATH="$HOME/.go"
 
 # fzf options, set default to fd instead of find
 export FZF_DEFAULT_COMMAND='fd --type f --color=never'
@@ -29,3 +36,19 @@ export FZF_ALT_C_COMMAND='fd --type d . --color=never'
 
 # History
 SAVEHIST=20000
+
+
+# Clean up $PATH, remove duplicates - credit https://unix.stackexchange.com/questions/40749/remove-duplicate-path-entries-with-awk-command
+if [ -n "$PATH" ]; then
+  old_PATH=$PATH:; PATH=
+  while [ -n "$old_PATH" ]; do
+    x=${old_PATH%%:*}       # the first remaining entry
+    case $PATH: in
+      *:"$x":*) ;;          # already there
+      *) PATH=$PATH:$x;;    # not there yet
+    esac
+    old_PATH=${old_PATH#*:}
+  done
+  PATH=${PATH#:}
+  unset old_PATH x
+fi

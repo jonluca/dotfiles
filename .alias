@@ -1,4 +1,3 @@
-
 alias ls='ls -G'
 alias ll='ls -alhTF'
 alias la='ls -A'
@@ -18,6 +17,7 @@ alias subl="sublime"
 alias s="sublime"
 alias desktop="cd /Users/jonlucadecaro/Desktop/"
 alias doc="cd /Users/jonlucadecaro/Documents/"
+
 # permissions in octal form
 alias perms="stat -f '%A %a %N' *"
 alias fkill='fzf_kill'
@@ -79,8 +79,6 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec ${SHELL}"
 
-# Print each PATH entry on a separate line
-alias path='echo -e ${PATH//:/\\n}'
 # common git push misspelling
 alias pg='gp' 
 alias g='git'
