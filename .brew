@@ -4,6 +4,8 @@
 # Created by: @seethroughtrees
 # https://github.com/seethroughtrees/brew-cask-dotfile-generator
 
+# install everything
+brew bundle exec -- bundle install
 
 # Make sure we’re using the latest Homebrew
 brew update

@@ -15,19 +15,17 @@ export LANG='en_US.UTF-8';
 export LC_ALL='en_US.UTF-8';
 export GOPATH="$HOME/.go"
 
-export PATH="/Users/jonlucadecaro/.pyenv/shims:/usr/local/bin:/usr/local/sbin:$PATH"
-export PATH="/usr/local/opt/openssl/bin:$PATH"
-export PATH="$GOPATH/bin:$PATH"
+export PATH="$PATH:/usr/local/bin:/usr/local/sbin"
+export PATH="$PATH:/usr/local/opt/openssl/bin"
+export PATH="$PATH:$GOPATH/bin"
 export NVM_DIR="$HOME/.nvm"
 
 # Ruby stuff
 export RBENV_ROOT="${HOME}/.rbenv"
 if [ -d "${RBENV_ROOT}" ]; then
-  export PATH="${RBENV_ROOT}/bin:${PATH}"
+  export PATH="$PATH:${RBENV_ROOT}/bin"
   eval "$(rbenv init -)"
 fi
-
-export PATH="/opt/metasploit-framework/bin/:$PATH"
 
 # fzf options, set default to fd instead of find
 export FZF_DEFAULT_COMMAND='fd --type f --color=never'
