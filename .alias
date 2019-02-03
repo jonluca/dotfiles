@@ -80,7 +80,7 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 alias reload="exec ${SHELL}"
 
 # common git push misspelling
-alias pg='gp' 
+alias pg='gp'
 alias g='git'
 
 alias ga='git add'
@@ -124,4 +124,4 @@ alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commi
 alias gq="qg"
 alias path='echo -e ${PATH//:/\\n}'
 
-alias nosync_nodemodules="find . -type d -name 'node_modules' -exec touch {}/.nosync \;"
+alias nosync_nodemodules="sudo find . -type d -name 'node_modules' -exec touch {}/.nosync \;"
