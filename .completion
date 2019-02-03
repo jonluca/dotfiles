@@ -4,7 +4,7 @@ zmodload -i zsh/complist
 WORDCHARS=''
 
 unsetopt flowcontrol
-setopt auto_menu         # show completion menu on successive tab press
+setopt auto_menu # show completion menu on successive tab press
 setopt menu_complete
 setopt complete_in_word
 setopt always_to_end
@@ -30,7 +30,7 @@ zstyle ':completion:*:cd:*' tag-order local-directories directory-stack path-dir
 zstyle ':completion::complete:*' use-cache 1
 zstyle ':completion::complete:*' cache-path $ZSH_CACHE_DIR
 
-if [[ $COMPLETION_WAITING_DOTS = true ]]; then
+if [[ $COMPLETION_WAITING_DOTS == true ]]; then
   expand-or-complete-with-dots() {
     # toggle line-wrapping off and back on again
     [[ -n "$terminfo[rmam]" && -n "$terminfo[smam]" ]] && echoti rmam

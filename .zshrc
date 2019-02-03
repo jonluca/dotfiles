@@ -20,10 +20,10 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator time)
 
 # Load dotfiles
 for file in $dotfiles/.{fzf.zsh,export,alias,functions,inputrc}; do
-	[ -r "$file" ] && [ -f "$file" ] && source "$file";
-done;
+  [ -r "$file" ] && [ -f "$file" ] && source "$file"
+done
 
-source  ~/powerlevel9k/powerlevel9k.zsh-theme
+source ~/powerlevel9k/powerlevel9k.zsh-theme
 
 zstyle ':completion:*' completer _complete
 zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' '+l:|=* r:|=*'
