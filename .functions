@@ -163,7 +163,7 @@ function emptytrash() {
   sudo rm -rfv /private/var/log/asl/*.asl
   sudo rm -rfv /Users/jonlucadecaro/Library/Mobile\ Documents/**/.Trash/*
   sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'
-}
+} 2>/dev/null
 
 # `v` with no arguments opens the current directory in Vim, otherwise opens the
 # given location
@@ -248,12 +248,4 @@ curl_time() {
 starttransfer:  %{time_starttransfer}s\n\
 -------------------------\n\
         total:  %{time_total}s\n" "$@"
-}
-
-sudo() {
-  if alias "$1" &>/dev/null; then
-    $(type "$1" | sed -E 's/^.*`(.*).$/\1/') "${@:2}"
-  else
-    command sudo $@
-  fi
 }
