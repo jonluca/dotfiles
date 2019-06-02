@@ -227,7 +227,7 @@ function fzf_kill() {
 
 # git add, commit, and push all in one
 function qg() {
-  message="'$*'"
+  message="$*"
   gaa
   gcmsg $message
   gp
@@ -238,7 +238,7 @@ function touchbarreset() {
   killall "ControlStrip"
 }
 
-curl_time() {
+function curl_time() {
   curl -so /dev/null -w "\
    namelookup:  %{time_namelookup}s\n\
       connect:  %{time_connect}s\n\
@@ -248,4 +248,11 @@ curl_time() {
 starttransfer:  %{time_starttransfer}s\n\
 -------------------------\n\
         total:  %{time_total}s\n" "$@"
+}
+
+function human_size(){
+  POSIXLY_CORRECT=1 
+  filename=$1
+  size=$(ls -sd -- "$filename" | awk '{print $1; exit}')
+  echo $size
 }
