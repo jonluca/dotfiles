@@ -11,8 +11,7 @@ alias ......="cd ../../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
-alias trick='git status; git add -A; git commit -m "JonLuca commit"; git push'
-alias me='ssh -p 32233 jonluca@159.89.134.105'
+alias me='ssh -p 32233 jonluca@104.248.73.10'
 alias subl="sublime"
 alias s="sublime"
 alias desktop="cd /Users/jonlucadecaro/Desktop/"
@@ -36,7 +35,7 @@ alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[
 alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
 
 # Flush Directory Service cache
-alias flush="sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
+alias flush="sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder && sudo ifconfig en0 down && sudo ifconfig en0 up"
 
 # Clean up LaunchServices to remove duplicates in the “Open With” menu
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
