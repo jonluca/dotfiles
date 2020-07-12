@@ -12,8 +12,7 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 alias me='ssh -p 32233 jonluca@104.248.73.10'
-alias subl="sublime"
-alias s="sublime"
+alias s="subl"
 alias desktop="cd /Users/jonlucadecaro/Desktop/"
 alias doc="cd /Users/jonlucadecaro/Documents/"
 

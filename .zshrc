@@ -11,7 +11,6 @@ HYPHEN_INSENSITIVE="true"
 MENU_COMPLETE="true"
 DISABLE_UPDATE_PROMPT="true"
 
-source $dotfiles/sandboxd
 source $ZSH/oh-my-zsh.sh
 # Oh My Zsh plugins
 plugins=(brew osx pip)
