@@ -60,5 +60,12 @@ set convert-meta off
 bindkey -e
 bindkey '[C' forward-word
 bindkey '[D' backward-word
+bindkey '\e[1;5C' forward-word
+bindkey '\e[1;5D' backward-word
+bindkey '\e[5C' forward-word
+bindkey '\e[5D' backward-word
+bindkey '\e\e[C' forward-word
+bindkey '\e\e[D' backward-word
+
 set mark-symlinked-directories on
 set skip-completed-text on
