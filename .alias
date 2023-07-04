@@ -20,11 +20,6 @@ alias doc="cd /Users/jonlucadecaro/Documents/"
 alias perms="stat -f '%A %a %N' *"
 alias fkill='fzf_kill'
 
-# Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
-
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
@@ -39,35 +34,11 @@ alias flush="sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder && 
 # Clean up LaunchServices to remove duplicates in the “Open With” menu
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 
-# Canonical hex dump; some systems have this symlinked
-command -v hd >/dev/null || alias hd="hexdump -C"
-
-# macOS has no `md5sum`, so use `md5` as a fallback
-command -v md5sum >/dev/null || alias md5sum="md5"
-
-# macOS has no `sha1sum`, so use `shasum` as a fallback
-command -v sha1sum >/dev/null || alias sha1sum="shasum"
-
 # Trim new lines and copy to clipboard
 alias c="tr -d '\n' | pbcopy"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
-
-# Show/hide hidden files in Finder
-alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
-alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
-
-# Hide/show all desktop icons (useful when presenting)
-alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
-alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
-
-# URL-encode strings
-alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
-
-# Kill all the tabs in Chrome to free up memory
-# [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
-alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
@@ -81,9 +52,6 @@ alias g='git'
 
 alias ga='git add'
 alias gaa='git add --all'
-alias gapa='git add --patch'
-alias gau='git add --update'
-alias gap='git apply'
 
 alias gb='git branch'
 alias gba='git branch -a'
@@ -91,27 +59,15 @@ alias gbd='git branch -d'
 
 alias gc='git commit -S -v'
 alias gcb='git checkout -b'
-alias gcf='git config --list'
-alias gcl='git clone --recursive'
 alias gclean='git clean -fd'
-alias gpristine='git reset --hard && git clean -dfx'
-alias gcm='git checkout master'
-alias gcd='git checkout develop'
+alias gcm='git checkout master || git checkout main'
 alias gcmsg='git commit -S -m'
-alias gco='git checkout'
 alias gcount='git shortlog -sn'
-alias gcp='git cherry-pick'
-alias gcpa='git cherry-pick --abort'
-alias gcpc='git cherry-pick --continue'
-alias gcs='git commit -S'
 
 alias gl='git pull'
 
 alias gp='git push'
-alias gpd='git push --dry-run'
 alias gpoat='git push origin --all && git push origin --tags'
-alias gpu='git push upstream'
-alias gpv='git push -v'
 
 alias glum='git pull upstream master'
 

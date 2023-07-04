@@ -163,7 +163,7 @@ function emptytrash() {
   sudo rm -rfv /private/var/log/asl/*.asl
   sudo rm -rfv /Users/jonlucadecaro/Library/Mobile\ Documents/**/.Trash/*
   sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'
-} 2>/dev/null
+}
 
 # `v` with no arguments opens the current directory in Vim, otherwise opens the
 # given location
@@ -255,4 +255,22 @@ function human_size(){
   filename=$1
   size=$(ls -sd -- "$filename" | awk '{print $1; exit}')
   echo $size
+}
+
+function retry() {
+    local -r -i max_attempts="$1"; shift
+    local -r cmd="$@"
+    local -i attempt_num=1
+
+    until $cmd
+    do
+        if (( attempt_num == max_attempts ))
+        then
+            echo "Attempt $attempt_num failed and there are no more attempts left!"
+            return 1
+        else
+            echo "Attempt $attempt_num failed! Trying again in $attempt_num seconds..."
+            sleep $(( attempt_num++ ))
+        fi
+    done
 }
