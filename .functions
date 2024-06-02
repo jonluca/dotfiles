@@ -157,14 +157,39 @@ function s() {
 }
 
 function emptytrash() {
-  sudo rm -rfv /Volumes/*/.Trashes/*
-  sudo rm -rfv '/Users/jonlucadecaro/Library/Mobile Documents/*/.Trash/*'
-  sudo rm -rfv ~/.Trash/*
-  sudo rm -rfv /private/var/log/asl/*.asl
-  sudo rm -rfv /Users/jonlucadecaro/Library/Mobile\ Documents/**/.Trash/*
-  sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'
-}
+  # Enable nullglob to avoid "no matches found" error
+  setopt NULL_GLOB
 
+  # Iterate through all mounted volumes
+  for volume in /Volumes/*; do
+    if [ -d "$volume/.Trashes" ]; then
+      sudo rm -rfv "$volume/.Trashes/"*
+      sudo find "$volume/.Trashes/" -type f -delete
+      sudo find "$volume/.Trashes/" -type d -empty -delete
+    fi
+  done
+
+  # Specific check for the sparsebundle's trash directory
+  if [ -d "/Volumes/ImpDoc/.Trashes" ]; then
+    sudo rm -rfv "/Volumes/ImpDoc/.Trashes/"*
+  fi
+  
+  # Remove trash from the home directory
+  sudo rm -rfv ~/.Trash/*
+
+  # Remove trash from iCloud Drive
+  sudo rm -rfv '/Users/jonlucadecaro/Library/Mobile Documents/*/.Trash/'*
+  sudo rm -rfv /Users/jonlucadecaro/Library/Mobile\ Documents/**/.Trash/'*'
+
+  # Remove ASL logs
+  sudo rm -rfv /private/var/log/asl/*.asl
+
+  # Clear quarantine events
+  sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'
+
+  # Disable nullglob after use
+  unsetopt NULL_GLOB
+}
 # `v` with no arguments opens the current directory in Vim, otherwise opens the
 # given location
 function v() {
